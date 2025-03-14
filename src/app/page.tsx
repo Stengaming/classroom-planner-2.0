@@ -140,7 +140,7 @@ export default function Home() {
           <p>Generate a seating plan for your favorite classroom.</p>
         </div>
         <div className={styles.pupils}>
-          <h2>Import your studens</h2>
+          <h2>Import your students</h2>
           <form
             onSubmit={(event) => {
               event.preventDefault();
