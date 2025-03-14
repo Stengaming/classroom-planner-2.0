@@ -151,12 +151,12 @@ export default function Home() {
             className={styles.newPupilForm}
           >
             <label htmlFor="pupil" hidden>Import students</label>
-            <input id="pupil" value={newPupils} onChange={e => setNewPupils(e.target.value)} type="text" placeholder="Comma-separated list of pupils"/>
+            <input id="pupil" value={newPupils} onChange={e => setNewPupils(e.target.value)} type="text" placeholder="vul de naam in van een student"/>
             <input value="Import" type="submit" className={styles.action} disabled={parsedPupils.length === 0}/>
 
             <span>
               {newPupils !== "" && (<>
-                {parsedPupils.length} new pupil{parsedPupils.length > 1 ? "s" : ""} detected: {parsedPupils.join(", ")}
+                {parsedPupils.length} new student{parsedPupils.length > 1 ? "s" : ""} detected: {parsedPupils.join(", ")}
               </>)}
             </span>
           </form>
