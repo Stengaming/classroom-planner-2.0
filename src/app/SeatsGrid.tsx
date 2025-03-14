@@ -40,7 +40,7 @@ export default function SeatsGrid({
       <Image src="/icons8-pushpin.png" alt="Pushpin" width={50} height={50} className={styles.pushpinLeft}/>
       <Image src="/icons8-pushpin.png" alt="Pushpin" width={50} height={50} className={styles.pushpinRight}/>
 
-      <div className={styles.blackboardTile}>Blackboard</div>
+      <div className={styles.blackboardTile}>Voor in de klas!d</div>
 
       <div className={styles.gridContainer}>
         <div className={styles.columnButtons}>
