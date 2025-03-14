@@ -189,7 +189,7 @@ export default function Home() {
       </section>
 
       <section className={styles.right}>
-        <h2>Generate a plan</h2>
+        <h2>Plategrond Classroom</h2>
         <button
           onClick={handleGenerate}
           className={styles.action}
