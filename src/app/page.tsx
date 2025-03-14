@@ -119,7 +119,7 @@ export default function Home() {
   const handleExportPupils = () => {
     const pupilsString = pupils.join(",");
     navigator.clipboard.writeText(pupilsString);
-    alert(`✅ Pupils copied to clipboard`);
+    alert(`✅ users copied to clipboard`);
   }
 
   const parsedPupils = newPupils.split(",").map(p => p.trim()).filter(p => p !== "");
@@ -136,11 +136,11 @@ export default function Home() {
     <main className={styles.main}>
       <section className={styles.left}>
         <div className={styles.header}>
-          <h1>PUPYL</h1>
-          <p>Generate a seating plan for your <s>little demons</s> favorite classroom.</p>
+          <h1>classroom planner</h1>
+          <p>Generate a seating plan for your favorite classroom.</p>
         </div>
         <div className={styles.pupils}>
-          <h2>Import your pupils</h2>
+          <h2>Import your studens</h2>
           <form
             onSubmit={(event) => {
               event.preventDefault();
@@ -150,7 +150,7 @@ export default function Home() {
             }}
             className={styles.newPupilForm}
           >
-            <label htmlFor="pupil" hidden>Import pupils</label>
+            <label htmlFor="pupil" hidden>Import students</label>
             <input id="pupil" value={newPupils} onChange={e => setNewPupils(e.target.value)} type="text" placeholder="Comma-separated list of pupils"/>
             <input value="Import" type="submit" className={styles.action} disabled={parsedPupils.length === 0}/>
 
@@ -162,10 +162,10 @@ export default function Home() {
           </form>
 
           <div className={styles.pupilDisplay}>
-            <span className={styles.pupilCount}>{pupils.length} pupils</span>
+            <span className={styles.pupilCount}>{pupils.length} students</span>
 
             <button onClick={handleExportPupils} disabled={pupils.length === 0} className={styles.action}>
-              Export pupils <LuClipboardCopy className={styles.exportIcon}/>
+              Export students <LuClipboardCopy className={styles.exportIcon}/>
             </button>
           </div>
 
