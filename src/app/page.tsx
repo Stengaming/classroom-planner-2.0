@@ -195,7 +195,7 @@ export default function Home() {
           className={styles.action}
           disabled={!canGeneratePlan}
         >
-          Generate plan {canGeneratePlan && <FaMagic/>}
+          husselen {canGeneratePlan && <FaMagic/>}
         </button>
 
         <SeatsGrid
