@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <footer>
-          ©Classroom 2023. Created with ❤️ and ✨ by <a href="https://stenstudio.vercel.app/">StenStudio</a>.
+          ©Classroom 2025. Created with ❤️ and ✨ by <a href="https://stenstudio.vercel.app/">StenStudio</a>.
         </footer>
       </body>
     </html>
