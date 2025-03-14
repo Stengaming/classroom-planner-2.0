@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'PUPYL',
+  title: 'classroom planner',
   description: 'Generate calssroom seating plans',
 }
 
@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <footer>
-          ©PUPYL 2023. Created with ❤️ and ✨ by <a href="https://github.com/tselmek">Antoine Jésus</a>.
+          ©Classroom 2023. Created with ❤️ and ✨ by <a href="https://stenstudio.vercel.app/">StenStudio</a>.
         </footer>
       </body>
     </html>
